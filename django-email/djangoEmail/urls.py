@@ -20,5 +20,9 @@ from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('send/', views.send),
+    path('send/', views.send_single),
+    path('send_mass/', views.send_mass),
+    path('send_attachment/', views.send_attachment),
+    path('send_html/', views.send_html),
+    path('send_html_template/', views.send_html_template),
 ]
